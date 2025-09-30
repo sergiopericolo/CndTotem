@@ -8,4 +8,4 @@ main_bp = Blueprint('main', __name__ , template_folder='templates')
 def index():
     # 2. Specifichiamo il percorso RELATIVO alla cartella templates del blueprint.
     # Flask cerca in: app/main/templates/main/index.html
-    return render_template('main.html')
+    return render_template('main/main.html')

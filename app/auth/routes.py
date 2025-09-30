@@ -7,7 +7,7 @@ auth_bp = Blueprint('auth', __name__ , template_folder='templates')
 def login():
     # Specifichiamo il percorso RELATIVO alla cartella templates del blueprint.
     # Flask cerca in: app/auth/templates/auth/login.html
-    return render_template('auth.html')
+    return render_template('auth/auth.html')
 
 @auth_bp.route('/logout')
 def logout():
